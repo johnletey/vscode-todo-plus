@@ -46,7 +46,7 @@ const View = {
 
     if ( !fs.existsSync ( iconPath ) ) {
 
-      const image = `<?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><circle fill="${color}" cx="8" cy="8" r="5.4"/></svg>`;
+      const image = `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.9 8.00001C12.9 10.7062 10.7062 12.9 8 12.9C5.2938 12.9 3.1 10.7062 3.1 8.00001C3.1 5.29381 5.2938 3.10001 8 3.10001C10.7062 3.10001 12.9 5.29381 12.9 8.00001Z" stroke="${color}"/></svg>`;
 
       fs.writeFileSync ( iconPath, image );
 
